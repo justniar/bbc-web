@@ -5,7 +5,7 @@ import Navbar from "@/components/Navbar";
 import Pengajar from "@/components/Pengajar";
 import Prestasi from "@/components/Prestasi";
 import Profil from "@/components/Profil";
-import Program from "@/components/Program";
+import Program from "@/components/program/Program";
 import Testimoni from "@/components/Testimoni";
 
 export default function Home() {
