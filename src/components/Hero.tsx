@@ -1,7 +1,14 @@
 import hero from "@/assets/hero.png"
 import Image from "next/image";
+import { useRouter } from 'next/navigation'
 
 const Hero = () => {
+  const router = useRouter();
+
+  const handleRedirect = () => {
+    router.push("https://forms.gle/xfoQpBmdiz1JajMT8");
+  };
+
   return (
     <section id="home" className="relative w-full bg-white overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-orange-100 to-white pointer-events-none">
@@ -24,7 +31,9 @@ const Hero = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ullam
             iste praesentium dolorum laudantium corrupti?
           </p>
-          <button className="px-4 py-2 md:px-6 md:py-3 rounded-full bg-orange-500 hover:bg-orange-600 transition-colors duration-200 text-white font-semibold text-sm md:text-base">
+          <button             
+            onClick={handleRedirect}
+            className="px-4 py-2 md:px-6 md:py-3 rounded-full bg-orange-500 hover:bg-orange-600 transition-colors duration-200 text-white font-semibold text-sm md:text-base">
             Daftar Sekarang
           </button>
         </div>
