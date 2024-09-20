@@ -42,22 +42,25 @@ const Program = () => {
           <ProgramCard
             src={math.src}
             judul="Prisma"
-            deskripsi="Klik untuk mengetahui lebih lanjut"
-            onClick={() => openModal("Prisma", "Prisma Kalkulator Tangan adalah metode unik untuk menghitung dengan cepat menggunakan sepuluh jari tangan. Metode ini tidak memerlukan alat bantu hitung seperti kalkulator atau kertas, sehingga sangat praktis dan menyenangkan, terutama untuk anak-anak.")}
+            deskripsi="Prisma Kalkulator Tangan adalah metode unik untuk menghitung dengan cepat menggunakan sepuluh jari tangan. Metode ini tidak memerlukan alat bantu hitung seperti kalkulator atau kertas, sehingga sangat praktis dan menyenangkan, terutama untuk anak-anak."
+            redirectUrl="program/prisma"
+            // onClick={() => openModal("Prisma", "Prisma Kalkulator Tangan adalah metode unik untuk menghitung dengan cepat menggunakan sepuluh jari tangan. Metode ini tidak memerlukan alat bantu hitung seperti kalkulator atau kertas, sehingga sangat praktis dan menyenangkan, terutama untuk anak-anak.")}
           />
           <ProgramCard
             src={pracalis.src}
             judul="Abama"
-            deskripsi="Klik untuk mengetahui lebih lanjut"
-            onClick={() => openModal("Abama", "ABAMA adalah singkatan dari Anak Baca PRISMA. Ini adalah sebuah program pembelajaran yang dirancang khusus untuk membantu anak-anak usia Taman Kanak-Kanak (TK) dan Sekolah Dasar (SD) meningkatkan kemampuan membaca dan menulis mereka. Program ini merupakan bagian dari lembaga bimbingan belajar PRISMA yang juga terkenal dengan metode Prisma Kalkulator Tangan untuk belajar berhitung.")}
+            deskripsi="ABAMA adalah singkatan dari Anak Baca PRISMA. Ini adalah sebuah program pembelajaran yang dirancang khusus untuk membantu anak-anak usia Taman Kanak-Kanak (TK) dan Sekolah Dasar (SD) meningkatkan kemampuan membaca dan menulis mereka. Program ini merupakan bagian dari lembaga bimbingan belajar PRISMA yang juga terkenal dengan metode Prisma Kalkulator Tangan untuk belajar berhitung."
+            // onClick={() => openModal("Abama", "ABAMA adalah singkatan dari Anak Baca PRISMA. Ini adalah sebuah program pembelajaran yang dirancang khusus untuk membantu anak-anak usia Taman Kanak-Kanak (TK) dan Sekolah Dasar (SD) meningkatkan kemampuan membaca dan menulis mereka. Program ini merupakan bagian dari lembaga bimbingan belajar PRISMA yang juga terkenal dengan metode Prisma Kalkulator Tangan untuk belajar berhitung.")}
+            redirectUrl="program/abama"
           />
           <ProgramCard
             src={qiro.src}
             judul="Qiro'ati"
-            deskripsi="Klik untuk mengetahui lebih lanjut"
-            onClick={() => openModal("Qiro'ati", "Metode Qiroati adalah sebuah metode pembelajaran membaca Al-Qur'an yang dirancang untuk memudahkan seseorang, terutama anak-anak, dalam belajar membaca Al-Qur'an dengan benar dan lancar. Metode ini menekankan pada praktek langsung membaca Al-Qur'an tanpa perlu mengeja setiap hurufnya.")}
+            deskripsi="Metode Qiroati adalah sebuah metode pembelajaran membaca Al-Qur'an yang dirancang untuk memudahkan seseorang, terutama anak-anak, dalam belajar membaca Al-Qur'an dengan benar dan lancar. Metode ini menekankan pada praktek langsung membaca Al-Qur'an tanpa perlu mengeja setiap hurufnya."
+            // onClick={() => openModal("Qiro'ati", "Metode Qiroati adalah sebuah metode pembelajaran membaca Al-Qur'an yang dirancang untuk memudahkan seseorang, terutama anak-anak, dalam belajar membaca Al-Qur'an dengan benar dan lancar. Metode ini menekankan pada praktek langsung membaca Al-Qur'an tanpa perlu mengeja setiap hurufnya.")}
+            redirectUrl="program/prisma"
           />
-          <ProgramCard
+          {/* <ProgramCard
             src={qiro.src}
             judul="Sempoa"
             deskripsi="Klik untuk mengetahui lebih lanjut"
@@ -98,7 +101,7 @@ const Program = () => {
             judul="Coding"
             deskripsi="Klik untuk mengetahui lebih lanjut"
             onClick={() => openModal("Coding", "Coding adalah proses menulis instruksi (kode) yang dapat dipahami oleh komputer untuk melakukan tugas tertentu. Ini melibatkan penggunaan bahasa pemrograman, yang merupakan seperangkat aturan dan sintaks yang digunakan untuk berkomunikasi dengan komputer.")}
-          />
+          /> */}
         </div>
       </div>
 
@@ -116,9 +119,6 @@ const Program = () => {
       >
         <IoIosArrowForward size={24} />
       </button>
-
-      {/* Modal */}
-      <Modal isOpen={isModalOpen} onClose={closeModal} judul={modalContent.judul} deskripsi={modalContent.deskripsi} />
     </div>
   );
 };
