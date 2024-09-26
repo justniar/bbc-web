@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 import math from "@/assets/math.png";
@@ -10,8 +10,6 @@ import ProgramCard from "./ProgramCard";
 
 const Program = () => {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
-  const [isModalOpen, setModalOpen] = useState(false);
-  const [modalContent, setModalContent] = useState({ judul: "", deskripsi: "" });
 
   const scrollLeft = () => {
     if (scrollContainerRef.current) {
