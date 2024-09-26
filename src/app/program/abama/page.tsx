@@ -1,8 +1,17 @@
+import Navbar from '@/components/Navbar'
+import AbamaComponent from '@/components/program/Abama'
 import React from 'react'
+
 
 const Abama = () => {
   return (
-    <div>abama</div>
+    <>
+    <div className='w-100 p-[100px]'>
+      <div>Abama</div>
+    </div>
+
+    </>
+    
   )
 }
 
