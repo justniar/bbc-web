@@ -14,7 +14,7 @@ export default function ProgramLayout({
     return (
       <>
         <Navbar />
-        <div>{children}</div>
+        <div className='w-100 p-[100px]'>{children}</div>
       </>
     );
   }
