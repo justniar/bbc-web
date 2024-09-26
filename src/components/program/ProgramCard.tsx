@@ -20,8 +20,12 @@ const ProgramCard: React.FC<ProgramCardProps> = ({ src, judul, deskripsi, redire
       >
         <Image src={src} alt={judul} className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 object-contain" width={100} height={100} />
         <h2 className="text-lg sm:text-xl font-semibold text-gray-800">{judul}</h2>
-        <p className="text-sm sm:text-base text-gray-600">
+        {/* <p className="text-sm sm:text-base text-gray-600">
           {deskripsi ? deskripsi : "Lorem ipsum dolor sit amet consectetur adipisicing elit."}
+        </p> */}
+        <p className="text-sm sm:text-base text-gray-600">
+          {/* Always show "Klik untuk mengetahui lebih lanjut" */}
+          Klik untuk mengetahui lebih lanjut
         </p>
       </div>
 
