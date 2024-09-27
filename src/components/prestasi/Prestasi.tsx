@@ -1,15 +1,18 @@
 import satu from "@/assets/prestasi/ciayumajakuning2023_1.jpeg";
 import dua from "@/assets/prestasi/ciayumajakuning2023_2.jpeg";
 import tiga from "@/assets/prestasi/ciayumajakuning2023_3.jpeg";
+import empat from "@/assets/prestasi/ciayumajakuning2023_4.jpeg";
+import lima from "@/assets/prestasi/ciayumajakuning2023_5.jpeg";
+import enam from "@/assets/prestasi/ciayumajakuning2023_6.jpeg";
 import Image from "next/image";
 
 const galleryData = [
   { url: satu, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023" },
   { url: dua, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023" },
   { url: tiga, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023" },
-  { url: satu, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023" },
-  { url: dua, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023" },
-  { url: tiga, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023" },
+  { url: empat, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023" },
+  { url: lima, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023" },
+  { url: enam, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023" },
   { url: satu, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023" },
   { url: dua, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023" },
   { url: tiga, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023" },
@@ -24,10 +27,10 @@ const Prestasi = () => {
       <div className="text-center md:w-1/2 space-y-5">
         <p className="text-orange-400">Galeri Bimbel Bumi Cerdas</p>
         <h1 className="text-4xl font-semibold">
-          Prestasi Terbaru Bimbel Bumi Cerdas
+          Dokumentasi Terbaru Bimbel Bumi Cerdas
         </h1>
         <p className="text-gray-300">
-          Berikut adalah beberapa pencapaian terbaru dari Bimbel Bumi Cerdas.
+          Berikut adalah beberapa dokumentasi terbaru dari Bimbel Bumi Cerdas.
         </p>
       </div>
       
