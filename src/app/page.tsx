@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import Pengajar from "@/components/Pengajar";
-import Prestasi from "@/components/Prestasi";
+import Prestasi from "@/components/prestasi/Prestasi";
 import Profil from "@/components/Profil";
 import Program from "@/components/program/Program";
 import Testimoni from "@/components/Testimoni";

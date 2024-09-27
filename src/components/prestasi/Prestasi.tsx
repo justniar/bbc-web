@@ -1,6 +1,6 @@
-import satu from "../assets/prestasi/1.jpeg";
-import dua from "../assets/prestasi/2.jpeg";
-import tiga from "../assets/prestasi/3.jpeg";
+import satu from "@/assets/prestasi/1.jpeg";
+import dua from "@/assets/prestasi/2.jpeg";
+import tiga from "@/assets/prestasi/3.jpeg";
 import Image from "next/image";
 
 const galleryData = [
@@ -22,7 +22,7 @@ const Prestasi = () => {
   return (
     <div id="prestasi" className="py-20 px-5 flex flex-col justify-center items-center space-y-10">
       <div className="text-center md:w-1/2 space-y-5">
-        <p className="text-orange-400">Prestasi Terbaru Bimbel Bumi Cerdas</p>
+        <p className="text-orange-400">Galeri Bimbel Bumi Cerdas</p>
         <h1 className="text-4xl font-semibold">
           Prestasi Terbaru Bimbel Bumi Cerdas
         </h1>
@@ -31,7 +31,7 @@ const Prestasi = () => {
         </p>
       </div>
       
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8 justify-center">
         {galleryData.map((item, index) => (
           <div 
             key={index} 
@@ -40,7 +40,7 @@ const Prestasi = () => {
             <Image
               src={item.url} 
               alt={item.caption} 
-              className="w-full h-72 object-cover rounded-lg"
+              className="w-60 h-36 object-cover rounded-lg"
             />
             <p className="text-gray-300 mt-3 text-center">{item.caption}</p>
           </div>
