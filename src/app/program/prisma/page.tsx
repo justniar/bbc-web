@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image"; 
-import prisma from "@/assets/LOGO-PRISMA.jpg"
+import prisma from "@/assets/prisma.jpg";
 
 const Prisma = () => {
   return (
