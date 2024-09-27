@@ -7,18 +7,24 @@ import enam from "@/assets/prestasi/ciayumajakuning2023_6.jpeg";
 import Image from "next/image";
 
 const galleryData = [
-  { url: satu, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023" },
-  { url: dua, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023" },
-  { url: tiga, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023" },
-  { url: empat, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023" },
-  { url: lima, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023" },
-  { url: enam, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023" },
-  { url: satu, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023" },
-  { url: dua, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023" },
-  { url: tiga, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023" },
-  { url: satu, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023" },
-  { url: dua, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023" },
-  { url: tiga, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023" },
+  { url: satu, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023", isVideo: false },
+  { url: dua, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023", isVideo: false },
+  { url: tiga, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023", isVideo: false },
+  { url: empat, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023", isVideo: false },
+  { url: lima, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023", isVideo: false },
+  { url: enam, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023", isVideo: false },
+  { url: satu, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023", isVideo: false },
+  { url: dua, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023", isVideo: false },
+  { url: tiga, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023", isVideo: false },
+  { url: satu, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023", isVideo: false },
+  { url: dua, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023", isVideo: false },
+  { url: tiga, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023", isVideo: false },
+  { url: "/nasional1.mp4", caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023", isVideo: true },
+  { url: "/nasional2.mp4", caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023", isVideo: true },
+  { url: "/nasional3.mp4", caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023", isVideo: true },
+  { url: "/nasional4.mp4", caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023", isVideo: true },
+  { url: "/nasional5.mp4", caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023", isVideo: true },
+  { url: "/nasional6.mp4", caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023", isVideo: true }
 ];
 
 const Prestasi = () => {
@@ -40,11 +46,21 @@ const Prestasi = () => {
             key={index} 
             className="flex flex-col items-center transform transition-transform duration-300 hover:scale-105"
           >
-            <Image
-              src={item.url} 
-              alt={item.caption} 
-              className="w-60 h-36 object-cover rounded-lg"
-            />
+            {item.isVideo ? (
+              <video
+                controls 
+                className="w-60 h-36 object-cover items-center rounded-lg"
+              >
+                <source src={typeof item.url === 'string' ? item.url : item.url.src}  type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            ) : (
+              <Image
+                src={item.url} 
+                alt={item.caption} 
+                className="w-60 h-36 object-cover rounded-lg"
+              />
+            )}
             <p className="w-60 text-gray-300 mt-3 text-center">{item.caption}</p>
           </div>
         ))}
