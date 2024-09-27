@@ -1,21 +1,21 @@
-import satu from "@/assets/prestasi/1.jpeg";
-import dua from "@/assets/prestasi/2.jpeg";
-import tiga from "@/assets/prestasi/3.jpeg";
+import satu from "@/assets/prestasi/ciayumajakuning2023_1.jpeg";
+import dua from "@/assets/prestasi/ciayumajakuning2023_2.jpeg";
+import tiga from "@/assets/prestasi/ciayumajakuning2023_3.jpeg";
 import Image from "next/image";
 
 const galleryData = [
-  { url: satu, caption: "Level 5 ABAMA" },
-  { url: dua, caption: "Level 5 ABAMA" },
-  { url: tiga, caption: "Level 5 ABAMA" },
-  { url: satu, caption: "Level 5 ABAMA" },
-  { url: dua, caption: "Level 5 ABAMA" },
-  { url: tiga, caption: "Level 5 ABAMA" },
-  { url: satu, caption: "Level 5 ABAMA" },
-  { url: dua, caption: "Level 5 ABAMA" },
-  { url: tiga, caption: "Level 5 ABAMA" },
-  { url: satu, caption: "Level 5 ABAMA" },
-  { url: dua, caption: "Level 5 ABAMA" },
-  { url: tiga, caption: "Level 5 ABAMA" },
+  { url: satu, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023" },
+  { url: dua, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023" },
+  { url: tiga, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023" },
+  { url: satu, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023" },
+  { url: dua, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023" },
+  { url: tiga, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023" },
+  { url: satu, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023" },
+  { url: dua, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023" },
+  { url: tiga, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023" },
+  { url: satu, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023" },
+  { url: dua, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023" },
+  { url: tiga, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023" },
 ];
 
 const Prestasi = () => {
@@ -31,7 +31,7 @@ const Prestasi = () => {
         </p>
       </div>
       
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8 justify-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 justify-center">
         {galleryData.map((item, index) => (
           <div 
             key={index} 
@@ -42,7 +42,7 @@ const Prestasi = () => {
               alt={item.caption} 
               className="w-60 h-36 object-cover rounded-lg"
             />
-            <p className="text-gray-300 mt-3 text-center">{item.caption}</p>
+            <p className="w-60 text-gray-300 mt-3 text-center">{item.caption}</p>
           </div>
         ))}
       </div>
