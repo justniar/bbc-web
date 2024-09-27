@@ -1,12 +1,11 @@
-import math from "@/assets/math.png";
-import pracalis from "@/assets/pracalis.png";
-// import qiro from "@/assets/qiro.png";
-import prisma from "@/assets/prisma.jpg";
-import abama from "@/assets/abama.png";
-import qiroati from "@/assets/qiroati.png"
-import cermat from "@/assets/cermat.png";
-import bec from "@/assets/bec.png";
-import coding from "@/assets/coding.jpg";
+import math from "@/assets/logo/math.png";
+import pracalis from "@/assets/logo/pracalis.png";
+import prisma from "@/assets/logo/prisma.jpg";
+import abama from "@/assets/logo/abama.png";
+import qiroati from "@/assets/logo/qiroati.png"
+import cermat from "@/assets/logo/cermat.png";
+import bec from "@/assets/logo/bec.png";
+import coding from "@/assets/logo/coding.jpg";
 
 import ProgramCard from "./ProgramCard";
 

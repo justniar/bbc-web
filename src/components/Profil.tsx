@@ -1,4 +1,4 @@
-import aboutSvg from "../assets/bg2.jpg"; // Update this path to the SVG file
+import aboutSvg from "@/assets/logo/bg2.jpg"; // Update this path to the SVG file
 
 const Profil = () => {
   return (

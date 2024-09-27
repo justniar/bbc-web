@@ -1,5 +1,5 @@
 import { IoSearch } from "react-icons/io5";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logo/logo.png";
 import Image from "next/image";
 
 const Navbar = () => {

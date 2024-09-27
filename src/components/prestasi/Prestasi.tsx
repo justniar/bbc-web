@@ -4,6 +4,12 @@ import tiga from "@/assets/prestasi/ciayumajakuning2023_3.jpeg";
 import empat from "@/assets/prestasi/ciayumajakuning2023_4.jpeg";
 import lima from "@/assets/prestasi/ciayumajakuning2023_5.jpeg";
 import enam from "@/assets/prestasi/ciayumajakuning2023_6.jpeg";
+import dokum1 from "@/assets/dokum/dokum1.jpeg";
+import dokum2 from "@/assets/dokum/dokum2.jpeg";
+import dokum3 from "@/assets/dokum/dokum3.jpeg";
+import dokum4 from "@/assets/dokum/dokum4.jpeg";
+import dokum5 from "@/assets/dokum/dokum5.jpeg";
+
 import Image from "next/image";
 
 const galleryData = [
@@ -13,11 +19,11 @@ const galleryData = [
   { url: empat, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023", isVideo: false },
   { url: lima, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023", isVideo: false },
   { url: enam, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023", isVideo: false },
-  { url: satu, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023", isVideo: false },
-  { url: dua, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023", isVideo: false },
-  { url: tiga, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023", isVideo: false },
-  { url: satu, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023", isVideo: false },
-  { url: dua, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023", isVideo: false },
+  { url: dokum1, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023", isVideo: false },
+  { url: dokum2, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023", isVideo: false },
+  { url: dokum3, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023", isVideo: false },
+  { url: dokum4, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023", isVideo: false },
+  { url: dokum5, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023", isVideo: false },
   { url: tiga, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023", isVideo: false },
   { url: "/nasional1.mp4", caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023", isVideo: true },
   { url: "/nasional2.mp4", caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023", isVideo: true },
