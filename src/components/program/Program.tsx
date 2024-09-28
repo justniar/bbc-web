@@ -29,7 +29,7 @@ const Program = () => {
             src={qiroati.src}
             judul="Qiro'ati"
             deskripsi="Metode Qiroati adalah sebuah metode pembelajaran membaca Al-Qur'an yang dirancang untuk memudahkan seseorang, terutama anak-anak, dalam belajar membaca Al-Qur'an dengan benar dan lancar. Metode ini menekankan pada praktek langsung membaca Al-Qur'an tanpa perlu mengeja setiap hurufnya."
-            redirectUrl="program/prisma"
+            redirectUrl="program/qiroati"
           />
           <ProgramCard
             src={math.src}

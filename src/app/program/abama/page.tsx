@@ -67,31 +67,31 @@ const Abama = () => {
             Keunggulan Metode Baca Cerdas ABAMA:          
           </h3>
           <div className="w-full items-center flex flex-wrap justify-between gap-3">
-            <div className="w-full sm:w-60  bg-white rounded-lg shadow-lg p-6 transform transition-all duration-300 hover:shadow-xl ">
+            <div className="w-full md:w-60  bg-white rounded-lg shadow-lg p-6 transform transition-all duration-300 hover:shadow-xl ">
               <p className="text-gray-700 mt-2">
               Meningkatkan kecepatan membaca: Anak-anak akan dapat membaca lebih banyak dalam waktu yang singkat.
               </p>
             </div>
 
-            <div className="w-full sm:w-60 bg-white rounded-lg shadow-lg p-6 transform transition-all duration-300 hover:shadow-xl">
+            <div className="w-full md:w-60 bg-white rounded-lg shadow-lg p-6 transform transition-all duration-300 hover:shadow-xl">
               <p className="text-gray-700 mt-2">
               Meningkatkan pemahaman: Anak-anak akan mampu menangkap makna yang terkandung dalam bacaan.              </p>
             </div>
 
-            <div className="w-full sm:w-60 bg-white rounded-lg shadow-lg p-6 transform transition-all duration-300 hover:shadow-xl">
+            <div className="w-full md:w-60 bg-white rounded-lg shadow-lg p-6 transform transition-all duration-300 hover:shadow-xl">
               <p className="text-gray-700 mt-2">
               Meningkatkan konsentrasi: Membaca secara teratur akan melatih konsentrasi anak.              </p>
             </div>
 
-            <div className="w-full sm:w-60 bg-white rounded-lg shadow-lg p-6 transform transition-all duration-300 hover:shadow-xl">
+            <div className="w-full md:w-60 bg-white rounded-lg shadow-lg p-6 transform transition-all duration-300 hover:shadow-xl">
               <p className="text-gray-700 mt-2">
               Meningkatkan daya ingat: Anak-anak akan lebih mudah mengingat apa yang mereka baca.              </p>
             </div>
-            <div className="w-full sm:w-60 bg-white rounded-lg shadow-lg p-6 transform transition-all duration-300 hover:shadow-xl">
+            <div className="w-full md:w-60 bg-white rounded-lg shadow-lg p-6 transform transition-all duration-300 hover:shadow-xl">
               <p className="text-gray-700 mt-2">
               Meningkatkan kecerdasan: Membaca adalah salah satu cara terbaik untuk merangsang kecerdasan.              </p>
             </div>
-            <div className="w-full sm:w-60 bg-white rounded-lg shadow-lg p-6 transform transition-all duration-300 hover:shadow-xl">
+            <div className="w-full md:w-60 bg-white rounded-lg shadow-lg p-6 transform transition-all duration-300 hover:shadow-xl">
               <p className="text-gray-700 mt-2">
               Meningkatkan kepercayaan diri: Keberhasilan dalam membaca akan membuat anak lebih percaya diri.              </p>
             </div>
