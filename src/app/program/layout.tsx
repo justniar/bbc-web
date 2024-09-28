@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Bimbel Bumi Cerdas",
@@ -15,6 +16,7 @@ export default function ProgramLayout({
       <>
         <Navbar />
         <div className='w-100'>{children}</div>
+        <Footer/>
       </>
     );
   }

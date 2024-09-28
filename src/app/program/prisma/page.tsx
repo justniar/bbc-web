@@ -6,7 +6,7 @@ import prisma from "@/assets/logo/prisma.jpg";
 const Prisma = () => {
   return (
     <div className="min-h-screen mt-11 bg-gray-60 py-10">
-      <div className="max-w-5xl mx-auto p-6 sm:p-10 bg-white shadow-lg rounded-lg mt-10">
+      <div className="max-w-5xl mx-auto p-6 sm:p-10 bg-white mt-10">
         <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">
           Belajar Menghitung dengan Metode Prisma
         </h2>
