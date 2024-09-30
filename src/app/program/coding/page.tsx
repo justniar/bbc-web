@@ -65,7 +65,7 @@ const Abama = () => {
           <h3 className="text-2xl font-semibold text-orange-600 mb-4">
           Mengapa Coding Penting?
           </h3>
-          <div className="w-full items-center flex justify-between gap-3">
+          <div className="w-full items-center flex flex-wrap justify-between gap-3">
             <div className="w-full md:w-60  bg-white rounded-lg shadow-lg p-6 transform transition-all duration-300 hover:shadow-xl ">
               <p className="text-gray-700 mt-2">
               Otomatisasi: Coding memungkinkan kita untuk mengotomatiskan tugas-tugas yang berulang atau memakan waktu, sehingga meningkatkan efisiensi dan produktivitas.              </p>

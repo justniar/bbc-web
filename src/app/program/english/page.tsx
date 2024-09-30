@@ -42,58 +42,32 @@ const English = () => {
           
         </div>
 
-        {/* <div className="my-10">
+        <div className="my-10">
           <h3 className="text-2xl font-semibold text-orange-600 mb-4">
-             Mengapa Memilih ABAMA?
-          </h3>
+          Mengapa Banyak Orang Memilih Brilliant English Course?          </h3>
           <ul className="list-disc pl-6 space-y-3 text-gray-700">
             <li>
-            Metode yang menyenangkan: Pembelajaran dibuat semenarik mungkin agar anak-anak tidak bosan.            </li>
+            <strong>Lingkungan Belajar yang Kondusif:</strong> Suasana belajar yang menyenangkan dan mendukung membuat peserta merasa nyaman dan termotivasi untuk belajar
+            </li>
             <li>
-            Guru yang berpengalaman: Para pengajar ABAMA adalah profesional yang berpengalaman dalam mendidik anak-anak.            </li>
+            <strong>Metode Pembelajaran yang Efektif:</strong> Metode pembelajaran yang digunakan telah terbukti efektif membantu peserta meningkatkan kemampuan berbahasa Inggris mereka
+            </li>
             <li>
-            Kurikulum yang terstruktur: Materi pembelajaran disusun secara sistematis dan sesuai dengan perkembangan anak.            </li>
+            <strong>Fasilitas yang Lengkap:</strong> Lembaga ini dilengkapi dengan berbagai fasilitas yang mendukung proses belajar, seperti ruang kelas yang nyaman, perpustakaan, dan area bermain.</li>
             <li>
-            Mendukung perkembangan otak: Membaca sejak dini sangat baik untuk perkembangan otak anak.            </li>
+            <strong>Reputasi yang Baik:</strong> Brilliant English Course telah memiliki reputasi yang baik sebagai salah satu lembaga kursus bahasa Inggris terbaik di Indonesia.
+            </li>
           </ul>
         </div>
 
-
         <div className="my-10">
-          <h3 className="text-2xl font-semibold text-orange-600 mb-4">
-            Keunggulan Metode Baca Cerdas ABAMA:          
-          </h3>
-          <div className="w-full items-center flex flex-wrap justify-between gap-3">
-            <div className="w-full sm:w-60  bg-white rounded-lg shadow-lg p-6 transform transition-all duration-300 hover:shadow-xl ">
-              <p className="text-gray-700 mt-2">
-              Meningkatkan kecepatan membaca: Anak-anak akan dapat membaca lebih banyak dalam waktu yang singkat.
-              </p>
-            </div>
-
-            <div className="w-full sm:w-60 bg-white rounded-lg shadow-lg p-6 transform transition-all duration-300 hover:shadow-xl">
-              <p className="text-gray-700 mt-2">
-              Meningkatkan pemahaman: Anak-anak akan mampu menangkap makna yang terkandung dalam bacaan.              </p>
-            </div>
-
-            <div className="w-full sm:w-60 bg-white rounded-lg shadow-lg p-6 transform transition-all duration-300 hover:shadow-xl">
-              <p className="text-gray-700 mt-2">
-              Meningkatkan konsentrasi: Membaca secara teratur akan melatih konsentrasi anak.              </p>
-            </div>
-
-            <div className="w-full sm:w-60 bg-white rounded-lg shadow-lg p-6 transform transition-all duration-300 hover:shadow-xl">
-              <p className="text-gray-700 mt-2">
-              Meningkatkan daya ingat: Anak-anak akan lebih mudah mengingat apa yang mereka baca.              </p>
-            </div>
-            <div className="w-full sm:w-60 bg-white rounded-lg shadow-lg p-6 transform transition-all duration-300 hover:shadow-xl">
-              <p className="text-gray-700 mt-2">
-              Meningkatkan kecerdasan: Membaca adalah salah satu cara terbaik untuk merangsang kecerdasan.              </p>
-            </div>
-            <div className="w-full sm:w-60 bg-white rounded-lg shadow-lg p-6 transform transition-all duration-300 hover:shadow-xl">
-              <p className="text-gray-700 mt-2">
-              Meningkatkan kepercayaan diri: Keberhasilan dalam membaca akan membuat anak lebih percaya diri.              </p>
-            </div>
-          </div>
-        </div> */}
+          <p>Secara singkat, <strong>Brilliant English Course</strong> adalah pilihan yang tepat bagi Anda yang ingin belajar bahasa Inggris secara intensif dan efektif. Jika Anda ingin meningkatkan kemampuan berbahasa Inggris Anda dalam waktu yang singkat, maka Brilliant English Course bisa menjadi solusi yang tepat.
+          <br/>
+          Tak perlu jauh-jauh ke kediri untuk belajar bahasa inggris, Sekarang Brilliant English Course tersedia di Bimbel Bumi Cerdas…<br/>
+          <strong>Buruan Daftar…..</strong>
+          </p>
+        </div>
+      
       </div>
     </div>
   );
