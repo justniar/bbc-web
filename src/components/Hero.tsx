@@ -1,4 +1,4 @@
-import hero from "@/assets/logo/hero.png";
+import hero from "@/assets/logo/young-people-waving-hand-set.svg";
 import Image from "next/image";
 import { useRouter } from 'next/navigation'
 
