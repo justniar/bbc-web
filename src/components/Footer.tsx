@@ -11,10 +11,12 @@ const Footer = () => {
           <div className="space-y-5">
             <h1 className="text-2xl font-bold text-gray-900">Bimbel Bumi Cerdas</h1>
             <p className="text-sm text-gray-600">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit
-              mollitia dolorum voluptas! Beatae voluptate, sint praesentium
-              inventore nisi ipsum doloremque.
+              <strong>Alamat Kantor Pusat :</strong><br/>
+              Jl. Sunan Gunung Jati No. 25B RT.01/02 Desa Purwawinangun Kec. Suranenggala Kab. Cirebon.
             </p>
+            <p className="text-sm text-gray-600">
+              <strong>Alamat Cabang Kertasura :</strong><br/>
+              Jl. Raya Sunan Gunung Jati Desa Kertasura No. 28 Blok II Cirebon – Jawa Barat</p>
           </div>
           <div className="space-y-5">
             <h2 className="text-xl font-semibold text-gray-900">Tentang</h2>
@@ -28,8 +30,7 @@ const Footer = () => {
           <div className="space-y-5">
             <h2 className="text-xl font-semibold text-gray-900">Hubungi Kami</h2>
             <p className="text-sm text-gray-600">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi
-              veritatis nam maiores. Accusantium, veniam quo.
+              Hubungi kami untuk mengetahui info lebih lanjut
             </p>
             <a
               href={whatsappLink}

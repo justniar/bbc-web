@@ -9,7 +9,7 @@ const Testimoni = () => {
             Apa yang mereka katakan tentang BBC
           </h2>
           <p className="mt-4 text-blue-gray-600">
-            We value our clients and their feedback. Here’s what they have to say about our services.
+            Apa yang mereka katakan tentang bimbel bumi cerdas
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center gap-5 md:gap-10">

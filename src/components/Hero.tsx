@@ -28,8 +28,7 @@ const Hero = () => {
             yang <span className="text-orange-500 font-bold">menyenangkan</span>
           </h1>
           <p className="text-gray-600 text-base md:text-lg lg:text-xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ullam
-            iste praesentium dolorum laudantium corrupti?
+          Dengan memanfaatkan teknologi terkini, Bimble Bumi Cerdas menyediakan berbagai materi pelajaran, latihan soal, dan simulasi ujian yang disesuaikan dengan kurikulum terbaru.
           </p>
           <button             
             onClick={handleRedirect}
