@@ -1,28 +1,21 @@
-import aboutSvg from "@/assets/logo/bg2.jpg"; // Update this path to the SVG file
-// import Image from "next/image";
-// import { Slider } from "@material-tailwind/react";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import { Pagination, Navigation } from 'swiper/modules';
 
-// const imageUrls = [
-//   "@/assets/dokum/dokum1.jpeg",
-//   "@/assets/dokum/dokum2.jpeg",
-//   "@/assets/dokum/dokum3.jpeg", 
-// ];
+import aboutSvg from "@/assets/logo/bg2.jpg";
+import Image from "next/image";
+
+import image1 from "@/assets/dokum/dokum4.jpeg";
+import image2 from "@/assets/dokum/sarana1.jpeg";
+import image3 from "@/assets/dokum/sarana2.jpeg";
 
 const Profil = () => {
-  // const settings = {
-  //   dots: true,
-  //   infinite: true,
-  //   speed: 500,
-  //   slidesToShow: 1,
-  //   slidesToScroll: 1,
-  //   autoplay: true,
-  //   autoplaySpeed: 3000,
-  // };
-
   return (
     <div 
       id="profil"
-      className="flex flex-col md:flex-row p-10 bg-white relative min-h-screen"
+      className="flex flex-col md:flex-row py-10 px-55 bg-white relative min-h-screen justify-center"
       style={{
         backgroundImage: `url(${aboutSvg})`,
         backgroundSize: 'cover',
@@ -30,10 +23,10 @@ const Profil = () => {
         backgroundRepeat: 'no-repeat'
       }}
     >
-      <div className="w-full md:w-1/2 flex flex-col justify-center space-y-5 text-center md:text-left mb-10 md:mb-0">
+      <div className="w-full px-20 md:w-1/2 flex flex-col justify-center space-y-5 text-center md:text-left mb-10 md:mb-0">
         <p className="text-orange-400 font-semibold">Profil Terbaru Bimble Bumi Cerdas</p>
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-orange-400">
-          Tentang Bimble Bumi Cerdas
+          Tentang Bimble Bumi Cerdas 
         </h1>
         <p className="text-gray-500 text-xs sm:text-sm md:text-base leading-relaxed">
           Bimble Bumi Cerdas adalah sebuah lembaga edukasi yang menyediakan layanan bimbingan belajar (bimbel) 
@@ -43,20 +36,46 @@ const Profil = () => {
           berbagai materi pelajaran, latihan soal, dan simulasi ujian yang disesuaikan dengan kurikulum terbaru.
         </p>
       </div>
+      
+      <div className="w-300 md:w-1/2 p-20">
+        <Swiper
+          modules={[Navigation, Pagination]}
+          navigation
+          pagination={{ clickable: true }}
+          spaceBetween={30}
+          slidesPerView={1}
+        >
+          <SwiperSlide>
+            <Image
+              src={image1}
+              className="block w-full rounded-lg"
+              alt="First slide"
+              width={400}
+              height={300}
+            />
+          </SwiperSlide>
 
-      {/* <div className="w-full md:w-1/2">
-        <Slider {...settings}>
-          {imageUrls.map((url, index) => (
-            <div key={index} className="p-2">
-              <Image
-                src={url}
-                alt={`Carousel Image ${index + 1}`}
-                className="w-full h-64 object-cover rounded-lg shadow-lg"
-              />
-            </div>
-          ))}
-        </Slider>
-      </div> */}
+          <SwiperSlide>
+            <Image
+              src={image2}
+              className="block w-full rounded-lg"
+              alt="Second slide"
+              width={400}
+              height={300}
+            />
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <Image
+              src={image3}
+              className="block w-full rounded-lg"
+              alt="Third slide"
+              width={400}
+              height={300}
+            />
+          </SwiperSlide>
+        </Swiper>
+      </div>
     </div>
   );
 };
