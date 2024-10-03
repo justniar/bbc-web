@@ -24,6 +24,7 @@ const Pengajar = () => {
       emailLink: "mailto:missanna@example.com", 
       instagramLink: "https://instagram.com/missanna", 
       linkedinLink: "https://linkedin.com/in/missanna", 
+      facebookLink: "https://linkedin.com/in/missanna", 
     },
     {
       name: "Miss Anna ",
@@ -32,6 +33,7 @@ const Pengajar = () => {
       imgSrc: anna,
       emailLink: "mailto:missanna@example.com", 
       instagramLink: "https://instagram.com/missanna", 
+      facebookLink: "https://facebook.com/in/missanna", 
       linkedinLink: "https://linkedin.com/in/missanna", 
     },
     {
@@ -41,6 +43,7 @@ const Pengajar = () => {
       imgSrc: dinah,
       emailLink: "mailto:missanna@example.com", 
       instagramLink: "https://instagram.com/missanna", 
+      facebookLink: "https://facebook.com/in/missanna", 
       linkedinLink: "https://linkedin.com/in/missanna", 
     },
     {
@@ -50,6 +53,7 @@ const Pengajar = () => {
       imgSrc: halimah,
       emailLink: "mailto:missanna@example.com", 
       instagramLink: "https://instagram.com/missanna", 
+      facebookLink: "https://facebook.com/in/missanna", 
       linkedinLink: "https://linkedin.com/in/missanna", 
     },
     {
@@ -59,6 +63,7 @@ const Pengajar = () => {
       imgSrc: juju,
       emailLink: "mailto:missanna@example.com", 
       instagramLink: "https://instagram.com/missanna", 
+      facebookLink: "https://facebook.com/in/missanna", 
       linkedinLink: "https://linkedin.com/in/missanna", 
     },
     {
@@ -68,6 +73,7 @@ const Pengajar = () => {
       imgSrc: mei,
       emailLink: "mailto:missanna@example.com", 
       instagramLink: "https://instagram.com/missanna", 
+      facebookLink: "https://facebook.com/in/missanna", 
       linkedinLink: "https://linkedin.com/in/missanna", 
     },
     {
@@ -76,7 +82,8 @@ const Pengajar = () => {
       description: "Jangan menyerah pada rasa takutmu",
       imgSrc: niar,
       emailLink: "mailto:missanna@example.com", 
-      instagramLink: "https://instagram.com/missanna", 
+      instagramLink: "https://instagram.com/missanna",
+      facebookLink: "https://facebook.com/in/missanna", 
       linkedinLink: "https://linkedin.com/in/missanna", 
     },
     {
@@ -86,6 +93,7 @@ const Pengajar = () => {
       imgSrc: santi,
       emailLink: "mailto:missanna@example.com", 
       instagramLink: "https://instagram.com/missanna", 
+      facebookLink: "https://facebook.com/in/missanna", 
       linkedinLink: "https://linkedin.com/in/missanna", 
     },
     {
@@ -95,6 +103,7 @@ const Pengajar = () => {
       imgSrc: shally,
       emailLink: "mailto:missanna@example.com", 
       instagramLink: "https://instagram.com/missanna", 
+      facebookLink: "https://facebook.com/in/missanna", 
       linkedinLink: "https://linkedin.com/in/missanna", 
     },
     {
@@ -104,6 +113,7 @@ const Pengajar = () => {
       imgSrc: tini,
       emailLink: "mailto:missanna@example.com", 
       instagramLink: "https://instagram.com/missanna", 
+      facebookLink: "https://facebook.com/in/missanna", 
       linkedinLink: "https://linkedin.com/in/missanna", 
     },
   ];

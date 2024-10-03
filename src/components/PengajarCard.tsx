@@ -1,6 +1,7 @@
 import React from 'react';
 import { MdOutlineAttachEmail } from "react-icons/md";
-import { FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaInstagram, FaLinkedin, FaFacebookSquare } from "react-icons/fa";
+
 import Image, { StaticImageData } from 'next/image';
 
 interface PengajarCardProps {
@@ -11,6 +12,7 @@ interface PengajarCardProps {
     emailLink: string;
     instagramLink: string;
     linkedinLink: string;
+    facebookLink: string;
 }
 
 const PengajarCard = ({
@@ -20,7 +22,8 @@ const PengajarCard = ({
     imgSrc,
     emailLink,
     instagramLink,
-    linkedinLink
+    linkedinLink,
+    facebookLink
 }: PengajarCardProps) => {
     return (
         <div className="flex flex-col justify-center bg-orange-100 w-full px-8 mx-6 my-12 text-center rounded-md md:w-96 lg:w-80 xl:w-64 dark:bg-gray-800 dark:text-gray-100 shadow">
@@ -50,6 +53,14 @@ const PengajarCard = ({
                     className="dark:text-gray-50 hover:dark:text-violet-600"
                 >
                     <FaInstagram />
+                </a>
+                <a
+                    rel="noopener noreferrer"
+                    href={facebookLink}
+                    title="Instagram"
+                    className="dark:text-gray-50 hover:dark:text-violet-600"
+                >
+                    <FaFacebookSquare />
                 </a>
                 <a
                     rel="noopener noreferrer"
