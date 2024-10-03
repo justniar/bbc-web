@@ -13,7 +13,7 @@ import tini from "@/assets/pengajar/miss tini.jpeg";
 import PengajarCard from "./PengajarCard";
 
 const Pengajar = () => {
-  const [showAll, setShowAll] = useState(false); // State to manage visibility
+  const [showAll, setShowAll] = useState(false);
 
   const teamMembers = [
     {
