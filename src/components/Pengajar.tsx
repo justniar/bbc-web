@@ -1,18 +1,33 @@
+import { useState } from "react";
+
+import alma from "@/assets/pengajar/miss alma.jpeg";
 import anna from "@/assets/pengajar/mis anna.jpeg";
 import dinah from "@/assets/pengajar/miss dinah.jpeg";
-import halimah from "@/assets/pengajar/miss halimah.jpg";
+import halimah from "@/assets/pengajar/miss halimah2.jpeg";
 import juju from "@/assets/pengajar/miss juju.jpeg";
 import mei from "@/assets/pengajar/miss mei.jpeg";
+import niar from "@/assets/pengajar/miss niar-salsa.jpg";
 import santi from "@/assets/pengajar/miss santi.jpg";
 import shally from "@/assets/pengajar/miss shally.jpeg";
 import tini from "@/assets/pengajar/miss tini.jpeg";
 import PengajarCard from "./PengajarCard";
 
 const Pengajar = () => {
+  const [showAll, setShowAll] = useState(false); // State to manage visibility
+
   const teamMembers = [
     {
+      name: "Miss Alma",
+      role: "Prisma, Abama",
+      description: "Don't rely on luck, but believe in hard work",
+      imgSrc: alma,
+      emailLink: "mailto:missanna@example.com", 
+      instagramLink: "https://instagram.com/missanna", 
+      linkedinLink: "https://linkedin.com/in/missanna", 
+    },
+    {
       name: "Miss Anna ",
-      role: "Baca, Prisma, Bahasa Inggris",
+      role: "Prisma, English",
       description: "Don't rely on luck, but believe in hard work",
       imgSrc: anna,
       emailLink: "mailto:missanna@example.com", 
@@ -21,7 +36,7 @@ const Pengajar = () => {
     },
     {
       name: "Miss Dinah",
-      role: "Baca, Prisma",
+      role: "Abama, Prisma",
       description: "Jalani, Syukuri, Nikmati🤍",
       imgSrc: dinah,
       emailLink: "mailto:missanna@example.com", 
@@ -30,7 +45,7 @@ const Pengajar = () => {
     },
     {
       name: "Miss Halimah",
-      role: "Baca, Prisma",
+      role: "Abama, Prisma, Matematika",
       description: "Life is a choice",
       imgSrc: halimah,
       emailLink: "mailto:missanna@example.com", 
@@ -39,7 +54,7 @@ const Pengajar = () => {
     },
     {
       name: "Miss Juju",
-      role: "Baca, Prisma",
+      role: "Abama, Prisma",
       description: "Tetap percaya diri diera gempuran omongan orang",
       imgSrc: juju,
       emailLink: "mailto:missanna@example.com", 
@@ -48,16 +63,25 @@ const Pengajar = () => {
     },
     {
       name: "Miss Mei",
-      role: "Baca, Prisma",
-      description: "Mengajar merupakan skill dan passion saya.",
+      role: "Abama, Prisma, English",
+      description: "Live with purpose, and never give up on achieving that goal, you can do it!",
       imgSrc: mei,
       emailLink: "mailto:missanna@example.com", 
       instagramLink: "https://instagram.com/missanna", 
       linkedinLink: "https://linkedin.com/in/missanna", 
     },
     {
+      name: "Miss Salsa",
+      role: "Komputer, Coding, English",
+      description: "Jangan menyerah pada rasa takutmu",
+      imgSrc: niar,
+      emailLink: "mailto:missanna@example.com", 
+      instagramLink: "https://instagram.com/missanna", 
+      linkedinLink: "https://linkedin.com/in/missanna", 
+    },
+    {
       name: "Miss Santi",
-      role: "Bahasa Inggris",
+      role: "English",
       description: "Spread the love and share the happiness😃",
       imgSrc: santi,
       emailLink: "mailto:missanna@example.com", 
@@ -66,7 +90,7 @@ const Pengajar = () => {
     },
     {
       name: "Miss Shally",
-      role: "Baca, Prisma",
+      role: "Abama, Prisma",
       description: "Setiap hari adalah kesempatan baru untuk memulai",
       imgSrc: shally,
       emailLink: "mailto:missanna@example.com", 
@@ -75,7 +99,7 @@ const Pengajar = () => {
     },
     {
       name: "Miss Tini",
-      role: "Baca, Prisma, Bahasa Inggris",
+      role: "Abama, Prisma, English",
       description: "Jalani, Nikmati, Syukuri",
       imgSrc: tini,
       emailLink: "mailto:missanna@example.com", 
@@ -83,6 +107,8 @@ const Pengajar = () => {
       linkedinLink: "https://linkedin.com/in/missanna", 
     },
   ];
+
+  const displayedMembers = showAll ? teamMembers : teamMembers.slice(0, 4);
 
   return (
     <section className="flex justify-center items-center bg-white max-w-[400px] md:max-w-full dark:bg-gray-900">
@@ -93,9 +119,17 @@ const Pengajar = () => {
           </p>
         </div>
         <div className="flex flex-row flex-wrap-reverse justify-center mt-8">
-          {teamMembers.map((member, index) => (
-            <PengajarCard key={index} {...member} />
+          {displayedMembers.map((member, index) => (
+              <PengajarCard key={index} {...member} />
           ))}
+        </div>
+        <div className="flex justify-center mt-4">
+          <button
+            onClick={() => setShowAll(!showAll)} 
+            className="px-4 py-2 text-white bg-orange-500 rounded-full hover:bg-orange-600 focus:outline-none focus:ring"
+          >
+            {showAll ? "Sembunyikan" : "Lihat lebih banyak"} 
+          </button>
         </div>
       </div>
     </section>

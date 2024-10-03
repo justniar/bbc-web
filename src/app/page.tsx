@@ -6,7 +6,7 @@ import Pengajar from "@/components/Pengajar";
 import Prestasi from "@/components/prestasi/Prestasi";
 import Profil from "@/components/Profil";
 import Program from "@/components/program/Program";
-import Testimoni from "@/components/Testimoni";
+// import Testimoni from "@/components/Testimoni";
 
 export default function Home() {
   return (
@@ -18,7 +18,7 @@ export default function Home() {
         <Profil/>
         <Prestasi/>
         <Pengajar/>
-        <Testimoni/>
+        {/* <Testimoni/> */}
         <Footer/>
       </main>
     </div>
