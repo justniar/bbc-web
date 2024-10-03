@@ -21,18 +21,18 @@ const galleryData = [
   { url: empat, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023", isVideo: false },
   { url: lima, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023", isVideo: false },
   { url: enam, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023", isVideo: false },
-  { url: dokum1, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023", isVideo: false },
-  { url: dokum2, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023", isVideo: false },
-  { url: dokum3, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023", isVideo: false },
-  { url: dokum4, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023", isVideo: false },
-  { url: dokum5, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023", isVideo: false },
+  { url: dokum1, caption: "Dokumentasi Proses Belajar BBC", isVideo: false },
+  { url: dokum2, caption: "Dokumentasi Proses Belajar BBC", isVideo: false },
+  { url: dokum3, caption: "Dokumentasi Proses Belajar BBC", isVideo: false },
+  { url: dokum4, caption: "Dokumentasi Proses Belajar BBC", isVideo: false },
+  { url: dokum5, caption: "Dokumentasi Proses Belajar BBC", isVideo: false },
   { url: tiga, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023", isVideo: false },
-  { url: "/nasional1.mp4", caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023", isVideo: true },
-  { url: "/nasional2.mp4", caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023", isVideo: true },
-  { url: "/nasional3.mp4", caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023", isVideo: true },
-  { url: "/nasional4.mp4", caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023", isVideo: true },
-  { url: "/nasional5.mp4", caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023", isVideo: true },
-  { url: "/nasional6.mp4", caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023", isVideo: true }
+  { url: "/nasional1.mp4", caption: "Lomba Prisma Tingkat Nasional 2023", isVideo: true },
+  { url: "/nasional2.mp4", caption: "Lomba Prisma Tingkat Nasional 2023", isVideo: true },
+  { url: "/nasional3.mp4", caption: "Lomba Prisma Tingkat Nasional 2023", isVideo: true },
+  { url: "/nasional4.mp4", caption: "Lomba Prisma Tingkat Nasional 2023", isVideo: true },
+  { url: "/nasional5.mp4", caption: "Lomba Prisma Tingkat Nasional 2023", isVideo: true },
+  { url: "/nasional6.mp4", caption: "Lomba Prisma Tingkat Nasional 2023", isVideo: true }
 ];
 
 const Prestasi = () => {
