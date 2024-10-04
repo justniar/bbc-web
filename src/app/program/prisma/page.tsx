@@ -65,17 +65,14 @@ const Prisma = () => {
           </ul>
         </div>
 
-        {/* Levels Section */}
         <div className="my-10">
           <h3 className="text-2xl font-semibold text-orange-600 mb-4">
             Level-Level dalam Prisma Kalkulator Tangan:
           </h3>
 
-          {/* Cards for Each Level */}
-          <div className="w-full flex justify-between">
+          <div className="w-full items-center flex flex-wrap justify-between gap-3">
 
-            {/* Level 1-4 */}
-            <div className="w-[220px] bg-white rounded-lg shadow-lg p-6 transform transition-all duration-300 hover:shadow-xl ">
+            <div className="w-full sm:w-60 bg-white rounded-lg shadow-lg p-6 transform transition-all duration-300 hover:shadow-xl ">
               <h4 className="text-xl font-semibold text-gray-800">
                 Level 1-4:
               </h4>
@@ -84,8 +81,7 @@ const Prisma = () => {
               </p>
             </div>
 
-            {/* Level 5-6 */}
-            <div className="w-[220px] bg-white rounded-lg shadow-lg p-6 transform transition-all duration-300 hover:shadow-xl">
+            <div className="w-full sm:w-60 bg-white rounded-lg shadow-lg p-6 transform transition-all duration-300 hover:shadow-xl">
               <h4 className="text-xl font-semibold text-gray-800">
                 Level 5-6:
               </h4>
@@ -94,8 +90,7 @@ const Prisma = () => {
               </p>
             </div>
 
-            {/* Level 7 */}
-            <div className="w-[220px] bg-white rounded-lg shadow-lg p-6 transform transition-all duration-300 hover:shadow-xl">
+            <div className="w-full sm:w-60 bg-white rounded-lg shadow-lg p-6 transform transition-all duration-300 hover:shadow-xl">
               <h4 className="text-xl font-semibold text-gray-800">
                 Level 7:
               </h4>
@@ -104,8 +99,7 @@ const Prisma = () => {
               </p>
             </div>
 
-            {/* Level 8-10 */}
-            <div className="w-[220px] bg-white rounded-lg shadow-lg p-6 transform transition-all duration-300 hover:shadow-xl">
+            <div className="w-full sm:w-60 bg-white rounded-lg shadow-lg p-6 transform transition-all duration-300 hover:shadow-xl">
               <h4 className="text-xl font-semibold text-gray-800">
                 Level 8-10:
               </h4>
@@ -117,8 +111,6 @@ const Prisma = () => {
           </div>
         </div>
 
-
-        {/* Conclusion Section */}
         <div className="my-10">
           <h3 className="text-2xl font-semibold text-orange-600 mb-4">
             Kesimpulan
