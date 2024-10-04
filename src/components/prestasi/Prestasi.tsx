@@ -61,10 +61,10 @@ const Prestasi = () => {
         <p className="text-gray-300">Berikut adalah beberapa dokumentasi terbaru dari Bimbel Bumi Cerdas.</p>
       </div>
 
-      <div className="flex space-x-4 justify-center mt-8">
+      <div className="flex flex-wrap gap-3 justify-center mt-8">
         <button
           onClick={() => setFilter("all")}
-          className={`px-6 py-2 rounded-full text-sm font-semibold transition-all duration-300 transform hover:scale-105 shadow-md ${
+          className={`w-full md:w-auto px-6 py-2 rounded-full text-sm font-semibold transition-all duration-300 transform hover:scale-105 shadow-md ${
             filter === "all"
               ? "bg-orange-500 text-white"
               : "text-gray-600 hover:bg-gray-300"
@@ -74,7 +74,7 @@ const Prestasi = () => {
         </button>
         <button
           onClick={() => setFilter("prestasi")}
-          className={`px-6 py-2 rounded-full text-sm font-semibold transition-all duration-300 transform hover:scale-105 shadow-md ${
+          className={`w-full md:w-auto px-6 py-2 rounded-full text-sm font-semibold transition-all duration-300 transform hover:scale-105 shadow-md ${
             filter === "prestasi"
               ? "bg-orange-500 text-white"
               : "text-gray-600 hover:bg-gray-300"
@@ -84,7 +84,7 @@ const Prestasi = () => {
         </button>
         <button
           onClick={() => setFilter("kegiatan")}
-          className={`px-6 py-2 rounded-full text-sm font-semibold transition-all duration-300 transform hover:scale-105 shadow-md ${
+          className={`w-full md:w-auto px-6 py-2 rounded-full text-sm font-semibold transition-all duration-300 transform hover:scale-105 shadow-md ${
             filter === "kegiatan"
               ? "bg-orange-500 text-white"
               : "text-gray-600 hover:bg-gray-300"
@@ -94,7 +94,7 @@ const Prestasi = () => {
         </button>
         <button
           onClick={() => setFilter("video")}
-          className={`px-6 py-2 rounded-full text-sm font-semibold transition-all duration-300 transform hover:scale-105 shadow-md ${
+          className={`w-full md:w-auto px-6 py-2 rounded-full text-sm font-semibold transition-all duration-300 transform hover:scale-105 shadow-md ${
             filter === "video"
               ? "bg-orange-500 text-white"
               : "text-gray-600 hover:bg-gray-300"
@@ -103,7 +103,6 @@ const Prestasi = () => {
           Video
         </button>
       </div>
-
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 justify-center">
         {displayedData.map((item, index) => (
