@@ -61,35 +61,50 @@ const Prestasi = () => {
         <p className="text-gray-300">Berikut adalah beberapa dokumentasi terbaru dari Bimbel Bumi Cerdas.</p>
       </div>
 
-      {/* Filter Buttons */}
-      <div className="flex space-x-4">
+      <div className="flex space-x-4 justify-center mt-8">
         <button
           onClick={() => setFilter("all")}
-          className={`px-4 py-2 rounded-full ${filter === "all" ? "bg-orange-500 text-white" : "bg-gray-200 text-gray-700"}`}
+          className={`px-6 py-2 rounded-full text-sm font-semibold transition-all duration-300 transform hover:scale-105 shadow-md ${
+            filter === "all"
+              ? "bg-orange-500 text-white"
+              : "text-gray-600 hover:bg-gray-300"
+          }`}
         >
           All
         </button>
         <button
           onClick={() => setFilter("prestasi")}
-          className={`px-4 py-2 rounded-full ${filter === "prestasi" ? "bg-orange-500 text-white" : "bg-gray-200 text-gray-700"}`}
+          className={`px-6 py-2 rounded-full text-sm font-semibold transition-all duration-300 transform hover:scale-105 shadow-md ${
+            filter === "prestasi"
+              ? "bg-orange-500 text-white"
+              : "text-gray-600 hover:bg-gray-300"
+          }`}
         >
           Prestasi
         </button>
         <button
           onClick={() => setFilter("kegiatan")}
-          className={`px-4 py-2 rounded-full ${filter === "kegiatan" ? "bg-orange-500 text-white" : "bg-gray-200 text-gray-700"}`}
+          className={`px-6 py-2 rounded-full text-sm font-semibold transition-all duration-300 transform hover:scale-105 shadow-md ${
+            filter === "kegiatan"
+              ? "bg-orange-500 text-white"
+              : "text-gray-600 hover:bg-gray-300"
+          }`}
         >
           Kegiatan Belajar Mengajar
         </button>
         <button
           onClick={() => setFilter("video")}
-          className={`px-4 py-2 rounded-full ${filter === "video" ? "bg-orange-500 text-white" : "bg-gray-200 text-gray-700"}`}
+          className={`px-6 py-2 rounded-full text-sm font-semibold transition-all duration-300 transform hover:scale-105 shadow-md ${
+            filter === "video"
+              ? "bg-orange-500 text-white"
+              : "text-gray-600 hover:bg-gray-300"
+          }`}
         >
           Video
         </button>
       </div>
 
-      {/* Gallery Grid */}
+
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 justify-center">
         {displayedData.map((item, index) => (
           <div key={index} className="flex flex-col items-center transform transition-transform duration-300 hover:scale-105">
@@ -106,7 +121,6 @@ const Prestasi = () => {
         ))}
       </div>
 
-      {/* Show More Button */}
       <div className="flex flex-col items-center mt-10">
         <button
           onClick={toggleShowAll}
