@@ -15,29 +15,39 @@ import dokum5 from "@/assets/dokum/dokum5.jpeg";
 import Image from "next/image";
 
 const galleryData = [
-  { url: satu, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023", isVideo: false },
-  { url: dua, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023", isVideo: false },
-  { url: tiga, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023", isVideo: false },
-  { url: empat, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023", isVideo: false },
-  { url: lima, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023", isVideo: false },
-  { url: enam, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023", isVideo: false },
-  { url: dokum1, caption: "Dokumentasi Proses Belajar BBC", isVideo: false },
-  { url: dokum2, caption: "Dokumentasi Proses Belajar BBC", isVideo: false },
-  { url: dokum3, caption: "Dokumentasi Proses Belajar BBC", isVideo: false },
-  { url: dokum4, caption: "Dokumentasi Proses Belajar BBC", isVideo: false },
-  { url: dokum5, caption: "Dokumentasi Proses Belajar BBC", isVideo: false },
-  { url: tiga, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023", isVideo: false },
-  { url: "/nasional1.mp4", caption: "Lomba Prisma Tingkat Nasional 2023", isVideo: true },
-  { url: "/nasional2.mp4", caption: "Lomba Prisma Tingkat Nasional 2023", isVideo: true },
-  { url: "/nasional3.mp4", caption: "Lomba Prisma Tingkat Nasional 2023", isVideo: true },
-  { url: "/nasional4.mp4", caption: "Lomba Prisma Tingkat Nasional 2023", isVideo: true },
-  { url: "/nasional5.mp4", caption: "Lomba Prisma Tingkat Nasional 2023", isVideo: true },
-  { url: "/nasional6.mp4", caption: "Lomba Prisma Tingkat Nasional 2023", isVideo: true }
+  { url: satu, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023", category: "prestasi", isVideo: false },
+  { url: dua, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023", category: "prestasi", isVideo: false },
+  { url: tiga, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023", category: "prestasi", isVideo: false },
+  { url: empat, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023", category: "prestasi", isVideo: false },
+  { url: lima, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023", category: "prestasi", isVideo: false },
+  { url: enam, caption: "Lomba Prisma Tingkat Ciayumajakuning Tahun 2023", category: "prestasi", isVideo: false },
+  { url: dokum1, caption: "Dokumentasi Proses Belajar BBC", category: "kegiatan", isVideo: false },
+  { url: dokum2, caption: "Dokumentasi Proses Belajar BBC", category: "kegiatan", isVideo: false },
+  { url: dokum3, caption: "Dokumentasi Proses Belajar BBC", category: "kegiatan", isVideo: false },
+  { url: dokum4, caption: "Dokumentasi Proses Belajar BBC", category: "kegiatan", isVideo: false },
+  { url: dokum5, caption: "Dokumentasi Proses Belajar BBC", category: "kegiatan", isVideo: false },
+  { url: "/nasional1.mp4", caption: "Lomba Prisma Tingkat Nasional 2023", category: "video", isVideo: true },
+  { url: "/nasional2.mp4", caption: "Lomba Prisma Tingkat Nasional 2023", category: "video", isVideo: true },
+  { url: "/nasional3.mp4", caption: "Lomba Prisma Tingkat Nasional 2023", category: "video", isVideo: true },
+  { url: "/nasional4.mp4", caption: "Lomba Prisma Tingkat Nasional 2023", category: "video", isVideo: true },
+  { url: "/nasional5.mp4", caption: "Lomba Prisma Tingkat Nasional 2023", category: "video", isVideo: true },
+  { url: "/nasional6.mp4", caption: "Lomba Prisma Tingkat Nasional 2023", category: "video", isVideo: true },
 ];
 
 const Prestasi = () => {
   const [showAll, setShowAll] = useState(false);
-  const displayedData = showAll ? galleryData : galleryData.slice(0, 5);
+  const [filter, setFilter] = useState("all"); // New state to track the current filter
+
+  // Function to filter media based on category
+  const filteredData = galleryData.filter((item) => {
+    if (filter === "all") return true;
+    if (filter === "prestasi") return item.category === "prestasi";
+    if (filter === "kegiatan") return item.category === "kegiatan";
+    if (filter === "video") return item.isVideo;
+    return true;
+  });
+
+  const displayedData = showAll ? filteredData : filteredData.slice(0, 5);
 
   const toggleShowAll = () => {
     setShowAll(!showAll);
@@ -51,6 +61,35 @@ const Prestasi = () => {
         <p className="text-gray-300">Berikut adalah beberapa dokumentasi terbaru dari Bimbel Bumi Cerdas.</p>
       </div>
 
+      {/* Filter Buttons */}
+      <div className="flex space-x-4">
+        <button
+          onClick={() => setFilter("all")}
+          className={`px-4 py-2 rounded-full ${filter === "all" ? "bg-orange-500 text-white" : "bg-gray-200 text-gray-700"}`}
+        >
+          All
+        </button>
+        <button
+          onClick={() => setFilter("prestasi")}
+          className={`px-4 py-2 rounded-full ${filter === "prestasi" ? "bg-orange-500 text-white" : "bg-gray-200 text-gray-700"}`}
+        >
+          Prestasi
+        </button>
+        <button
+          onClick={() => setFilter("kegiatan")}
+          className={`px-4 py-2 rounded-full ${filter === "kegiatan" ? "bg-orange-500 text-white" : "bg-gray-200 text-gray-700"}`}
+        >
+          Kegiatan Belajar Mengajar
+        </button>
+        <button
+          onClick={() => setFilter("video")}
+          className={`px-4 py-2 rounded-full ${filter === "video" ? "bg-orange-500 text-white" : "bg-gray-200 text-gray-700"}`}
+        >
+          Video
+        </button>
+      </div>
+
+      {/* Gallery Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 justify-center">
         {displayedData.map((item, index) => (
           <div key={index} className="flex flex-col items-center transform transition-transform duration-300 hover:scale-105">
@@ -67,6 +106,7 @@ const Prestasi = () => {
         ))}
       </div>
 
+      {/* Show More Button */}
       <div className="flex flex-col items-center mt-10">
         <button
           onClick={toggleShowAll}
